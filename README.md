@@ -72,18 +72,18 @@ https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login
 
 
 ### Set up tmux  
----------------
-Create work-tools folder
-mkdir -p ~/work-tools
-cd ~/work-tools 
-git clone https://github.com/vfedotovs/tools.git . 
-cp tmux.conf ~/.tmux.conf
-tmux source-file ~/.tmux.conf
+---------------   
+mkdir -p ~/work-tools  && cd ~/work-tools    
+git clone https://github.com/vfedotovs/tools.git .    
+cp tmux.conf ~/.tmux.conf   
+tmux source-file ~/.tmux.conf   
 
-### Lounch tmux and install plugins
-------------------------------------
-### Before install tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+### Lounch tmux and install plugins   
+------------------------------------   
+### Before install tmux plugins   
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm   
 
-tmux 
-C-a + i   << will install tmux pluggins
+### Tmux Plugin installation step   
+----------------------------------  
+tmux   
+C-a + i  << will install tmux pluggins   
