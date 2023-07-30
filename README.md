@@ -54,19 +54,19 @@ https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df
 explore keybindings
 https://bytexd.com/how-to-use-fzf-command-line-fuzzy-finder/?utm_content=cmp-true
 
-### Mein 3 default key bindings
-CTRL + t - search for files and folders to STDOUT in current dir fuzzy way
-CTRL + r - search zshell history fuzzy way
-ALT + c - search for folder name and cd in to that in fuzzy way
+### Mein 3 default key bindings   
+CTRL + t - search for files and folders to STDOUT in current dir fuzzy way   
+CTRL + r - search zshell history fuzzy way   
+ALT + c - search for folder name and cd in to that in fuzzy way   
 
 
 
-#### Bash RC uis avaibale in guithub - TBC how correct it is   
+#### How to import zshrc config file (aliases) and zsh functions (Work in progress) 
 ---------------------------------------------------------
-need to review aliases 
+Main problem how to quickly import aliases and functions   
 
 
-### TODO: set up pasweordless authenticattins to scripts server
+### How to set up passweordless authentification to linux server
 -----------------------------------
 https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login
 
