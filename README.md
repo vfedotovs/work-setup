@@ -26,23 +26,24 @@ docker commit -p container_id new_container_name.
 ## Manual Windows WSL setup steps   
 
 ### Install wsl  (Reboot of windows needed) 
-wsl --install   
-  
-### After reboot   
+```bash
+wsl --install   # reboot PC
 wsl --list --online   
-wsl --install -d Ubuntu-22.04   
-
+wsl --install -d Ubuntu-22.04
+```
 
 ### Install zsh
 ---------------
+```bash
 sudo apt-get install zsh
+```
 
 ### Change shell to zsh
 ---------------------
+```bash
 sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-### Switch shell to zsh permananttly
-chsh -s /bin/zsh
+chsh -s /bin/zsh  # Switch shell to zsh permananttly
+```
 
 
 ### Install zsh auto compltes complete (Work in progress)
@@ -72,18 +73,23 @@ https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login
 
 
 ### Set up tmux  
----------------   
+---------------
+```bash
 mkdir -p ~/work-tools  && cd ~/work-tools    
 git clone https://github.com/vfedotovs/tools.git .    
 cp tmux.conf ~/.tmux.conf   
 tmux source-file ~/.tmux.conf   
+```
 
 ### Lounch tmux and install plugins   
 ------------------------------------   
-### Before install tmux plugins   
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm   
+```bash  
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm   # Before install tmux plugins clone repo
+```
 
 ### Tmux Plugin installation step   
 ----------------------------------  
+```bash
 tmux   
-C-a + i  << will install tmux pluggins   
+C-a + i  # This stelp will install tmux pluggins   
+```
