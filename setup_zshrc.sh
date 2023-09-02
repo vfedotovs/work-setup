@@ -14,12 +14,20 @@ tar xzvf nvim-linux64.tar.gz
 ln -s ./nvim-linux64/bin/nvim ./nvim
 export PATH="$HOME/.local/bin:$PATH"
 
-# Install zsh
-sudo apt install zsh tmux -y
+# Install packages
+sudo apt install zsh tmux fzf -y
 
 echo "NVIM, Zsh, tmux  installed successfully."
 
-# Clone the repository (change <repository_url> to your actual repository URL)
+
+# Tmux config import
+mkdir -p ~/work-tools  && cd ~/work-tools    
+git clone https://github.com/vfedotovs/tools.git .    
+cp tmux.conf ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm   # Before install tmux plugins clone repo
+tmux source-file ~/.tmux.conf   
+
+echo "To install tmux plugins: tmux and C-a + i  # This step will install tmux pluggins"
 
 
 # TODO:
