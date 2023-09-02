@@ -15,7 +15,8 @@ ln -s ./nvim-linux64/bin/nvim ./nvim
 export PATH="$HOME/.local/bin:$PATH"
 
 # Install packages
-sudo apt install zsh tmux fzf -y
+# ripgrep required for nvim to search files and grep text
+sudo apt install zsh tmux fzf ripgrep -y
 
 echo "NVIM, Zsh, tmux  installed successfully."
 
