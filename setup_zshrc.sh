@@ -8,7 +8,7 @@ wget --version | grep GNU
 
 # nvim 0.9 install
 mkdir -p ~/.local/bin/
-wget wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz /tmp
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz /tmp
 
 cp /tmp/nvim-linux64.tar.gz ~/.local/bin/
 cd ~/.local/bin/ || {
